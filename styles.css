@@ -9,3 +9,16 @@ p
 	color: #1DC3D3;
 	font-size: 18px;
 }
+
+.btn
+{
+	background-color: #BD094C;
+	border: none;
+	padding: 9px;
+	color: #ffffff;
+}
+
+.btn:hover
+{
+	background-color: #000000;
+}
