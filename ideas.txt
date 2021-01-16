@@ -1,0 +1,43 @@
+search bar:
+https://www.w3schools.com/howto/howto_css_searchbar.asp
+
+link menu:
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_vertical_menu
+.vertical-menu {
+  width: 200px;
+  float: right;
+}
+
+slide down bar on scroll:
+https://www.w3schools.com/howto/howto_js_navbar_slide.asp
+
+or hide:
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_hide_scroll
+
+sticky scroll bar:
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_sticky
+
+drop down menu for CV:
+https://www.w3schools.com/howto/howto_css_dropdown.asp
+https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_responsive_navbar_dropdown
+
+columns:
+https://www.w3schools.com/howto/howto_css_two_columns.asp
+
+Main layout:
+https://www.w3schools.com/howto/howto_make_a_website.asp
+https://www.w3schools.com/howto/howto_website_bootstrap.asp
+https://www.w3schools.com/howto/howto_website_bootstrap4.asp
+https://www.w3schools.com/howto/howto_css_example_website.asp
+
+Image overlay:
+https://www.w3schools.com/howto/howto_css_image_overlay.asp
+
+Form on image:
+https://www.w3schools.com/howto/howto_css_form_on_image.asp
+
+Text on image:
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image
+sticky image:
+https://www.w3schools.com/howto/howto_css_image_sticky.asp
