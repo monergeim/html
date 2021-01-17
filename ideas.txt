@@ -16,6 +16,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_hide_scroll
 
 sticky scroll bar:
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_sticky
+https://www.w3schools.com/howto/howto_css_sticky_element.asp
 
 drop down menu for CV:
 https://www.w3schools.com/howto/howto_css_dropdown.asp
@@ -41,3 +42,47 @@ Text on image:
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image
 sticky image:
 https://www.w3schools.com/howto/howto_css_image_sticky.asp
+
+Button on image:
+https://www.w3schools.com/howto/howto_css_button_on_image.asp
+read more button:
+https://www.w3schools.com/howto/howto_js_read_more.asp
+
+To top button:
+https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+
+TIMELINE:
+https://www.w3schools.com/howto/howto_css_timeline.asp
+
+scroll bar:
+https://www.w3schools.com/howto/howto_js_scroll_indicator.asp
+
+display element hover:
+https://www.w3schools.com/howto/howto_css_display_element_hover.asp
+
+Collapsible:
+https://www.w3schools.com/howto/howto_js_collapsible.asp
+
+Flipcard;
+https://www.w3schools.com/howto/howto_css_flip_card.asp
+
+Clearfix for photo:
+https://www.w3schools.com/howto/howto_css_clearfix.asp
+
+Cutout text:
+https://www.w3schools.com/howto/howto_css_cutout_text.asp
+
+vertical bar:
+https://www.w3schools.com/howto/howto_css_vertical_line.asp
+
+Dividers:
+https://www.w3schools.com/howto/howto_css_dividers.asp
+
+Typing effect:
+https://www.w3schools.com/howto/howto_js_typewriter.asp
+
+Section counter:
+https://www.w3schools.com/howto/howto_css_section_counter.asp
+
+quotes slideshow:
+https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp
