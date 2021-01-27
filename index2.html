@@ -19,12 +19,57 @@
   text-align: center;
   padding: 10px 12px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 17px;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.navbar a:hover {
-  background: #ddd;
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 12px;
+  background-color: inherit;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 187px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
   color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .vertical-menu {
@@ -32,6 +77,7 @@
   position: absolute;
   right: 0;
   top: 20%;
+  z-index: 998;
 }
 
 .vertical-menu a {
@@ -68,23 +114,23 @@ body, html {
 }
 .bgimg-1 {
   background-image: url("https://a-static.besthdwallpaper.com/blue-sky-galaxy-shpalery-2560x1080-1747_14.jpg");
-  min-height: 80%;
+  min-height: 90%;
 }
 
 .bgimg-2 {
   background-image: url("https://www.ga4gh.org/wp-content/uploads/beacon-WP-image-01.png");
-  min-height: 600px;
+  min-height: 570px;
 }
 
 .bgimg-3 {
   background-image: url("https://miro.medium.com/max/2700/1*NVh77IO_pSVvQT1TOQtnTQ.jpeg");
-  min-height: 600px;
+  min-height: 650px;
 }
 
 .caption {
   position: absolute;
   left: 0;
-  top: 30%;
+  top: 70%;
   width: 100%;
   text-align: left;
   color: #000;
@@ -118,14 +164,25 @@ h3 {
 <div class="bgimg-1">
   <div class="navbar">
     <a href="#home">Home</a>
-    <a href="#books">Books</a>
-    <a href="#contact">Contact</a>
+    <a href="books.html">Books</a>
+    <a href="mailto:sergii.lypnytskiy@gmail.com">Send_e-mail</a>
+    <div class="dropdown">
+      <button class="dropbtn">Curriculum_Vitae
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Detailed CV</a>
+        <a href="#">Creative CV</a>
+        <a href="#">Minimalistic CV</a>
+      </div>
+    </div>
   </div>
   <div class="vertical-menu">
-    <a href="https://google.com">Linkedin</a>
-    <a href="#">Github</a>
-    <a href="#">Link 3</a>
-    <a href="#">Link 4</a>
+    <a href="https://www.linkedin.com/in/sergii-lypnytskiy/">Linkedin</a>
+    <a href="https://github.com/monergeim">Git</a>
+    <a href="https://medium.com/@monergeim">Medium</a>
+    <a href="https://stackoverflow.com/users/5306939">StackOverflow</a>
+
   </div>
   <div class="caption">
   <span class="border">Sergii Lypnytskyi</span>
@@ -133,31 +190,25 @@ h3 {
 </div>
 
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">Parallax Demo</h3>
+  <h3 style="text-align:center;">About</h3>
   <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
 </div>
 
 <div class="bgimg-2">
   <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Certifications:</span>
   </div>
 </div>
 
 <div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
   <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
   </div>
 </div>
 
 <div class="bgimg-3">
   <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
-  </div>
-</div>
-
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Have a great day!</span>
   </div>
 </div>
 
