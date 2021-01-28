@@ -74,13 +74,6 @@
   display: block;
 }
 
-.vl {
-  border-right: 6px solid black;
-  height: 400px;
-  position: absolute;
-  left: 84%;
-}
-
 .vertical-menu {
   width: 200px;
   position: absolute;
@@ -153,6 +146,22 @@ body, html {
   letter-spacing: 10px;
 }
 
+.text {
+  background-color: black;
+  color: white;
+  font-size: 4vw;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 5px;
+  width: 50%;
+  text-align: center;
+  position: left;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: multiply;
+}
+
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -166,10 +175,15 @@ h3 {
     background-attachment: scroll;
   }
 }
+
 #more {display: none;}
+
+
 </style>
 </head>
 <body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 <div class="bgimg-1">
   <div class="navbar">
@@ -187,7 +201,6 @@ h3 {
       </div>
     </div>
   </div>
-  <div class="vl"></div>
   <div class="vertical-menu">
     <a href="https://www.linkedin.com/in/sergii-lypnytskiy/">Linkedin</a>
     <a href="https://github.com/monergeim">Git</a>
@@ -196,13 +209,13 @@ h3 {
 
   </div>
   <div class="caption">
-  <span class="border">Sergii Lypnytskyi</span>
+  <div class="text">Sergii Lypnytskyi</div>
   </div>
 </div>
 
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
   <h3 style="text-align:center;">About</h3>
-  <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio<span id="dots">...</span><span id="more">. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+  <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling<span id="dots">...</span><span id="more">. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
   <button onclick="myFunction()" id="myBtn">Read more</button>
 </div>
 
@@ -240,6 +253,27 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 </script>
 
 </body>
