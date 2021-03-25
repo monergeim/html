@@ -167,10 +167,10 @@ body {
   font-family: 'Lily Script One';
 }
 
-.card {
+.card1 {
   position: absolute;
   top: 70%;
-  left: 10%;
+  left: 13%;
   width: 200px;
   height: 200px;
   margin: -150px;
@@ -178,7 +178,7 @@ body {
   perspective: 600px;
 }
 
-.content {
+.content1 {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -188,13 +188,13 @@ body {
   transform-style: preserve-3d;
 }
 
-.card:hover .content {
+.card1:hover .content1 {
   transform: rotateY( 180deg ) ;
   transition: transform 0.5s;
 }
 
-.front,
-.back {
+.front1,
+.back1 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -207,7 +207,53 @@ body {
   backface-visibility: hidden;
 }
 
-.back {
+.back1 {
+  background: #03446A;
+  color: white;
+  transform: rotateY( 180deg );
+}
+
+.card2 {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  width: 200px;
+  height: 200px;
+  margin: -150px;
+  float: left;
+  perspective: 600px;
+}
+
+.content2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card2:hover .content2 {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front2,
+.back2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  line-height: 200px;
+  color: #03446A;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.back2 {
   background: #03446A;
   color: white;
   transform: rotateY( 180deg );
@@ -267,13 +313,23 @@ body {
 
 <div style="position:relative;">
   <div style="color: #777;background-color:white;text-align:center;padding:120px 180px;text-align: justify;">
-    <div class="card">
-      <div class="content">
-        <div class="front">
-          Front
+    <div class="card1">
+      <div class="content1">
+        <div class="front1">
+          MTA
         </div>
-        <div class="back">
-          Back!
+        <div class="back1">
+          Almost done!
+        </div>
+      </div>
+    </div>
+    <div class="card2">
+      <div class="content2">
+        <div class="front2">
+          ITIL
+        </div>
+        <div class="back2">
+          Done!
         </div>
       </div>
     </div>
