@@ -171,14 +171,14 @@ body {
   position: absolute;
   top: 70%;
   left: 13%;
-  width: 200px;
+  width: 193px;
   height: 200px;
   margin: -150px;
   float: left;
   perspective: 600px;
 }
 
-.content1 {
+.content1, .content2, .content3, .content4, .content5 {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -188,7 +188,8 @@ body {
   transform-style: preserve-3d;
 }
 
-.card1:hover .content1 {
+.card1:hover .content1, .card2:hover .content2, .card3:hover .content3,
+ .card4:hover .content4, .card5:hover .content5{
   transform: rotateY( 180deg ) ;
   transition: transform 0.5s;
 }
@@ -198,45 +199,34 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: white;
   line-height: 200px;
   color: #03446A;
   text-align: center;
-  font-size: 30px;
   border-radius: 5px;
   backface-visibility: hidden;
+  background-image: url('./img/MTA.png');
+  background-position: center;
+  background-size: cover;
+  background-size: 85%;
+  background-repeat: no-repeat;
 }
 
 .back1 {
   background: #03446A;
   color: white;
   transform: rotateY( 180deg );
+  font-size: 30px;
 }
 
 .card2 {
   position: absolute;
   top: 70%;
-  left: 30%;
-  width: 200px;
+  left: 29%;
+  width: 193px;
   height: 200px;
   margin: -150px;
   float: left;
   perspective: 600px;
-}
-
-.content2 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 15px rgba(0,0,0,0.4);
-
-  transition: transform 1s;
-  transform-style: preserve-3d;
-}
-
-.card2:hover .content2 {
-  transform: rotateY( 180deg ) ;
-  transition: transform 0.5s;
 }
 
 .front2,
@@ -244,19 +234,128 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: white;
   line-height: 200px;
   color: #03446A;
   text-align: center;
-  font-size: 30px;
   border-radius: 5px;
   backface-visibility: hidden;
+  background-image: url('./img/LPIC-2.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-size: 85%;
+  background-repeat: no-repeat;
 }
 
 .back2 {
   background: #03446A;
   color: white;
   transform: rotateY( 180deg );
+  font-size: 30px;
+}
+
+.card3 {
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  width: 193px;
+  height: 200px;
+  margin: -150px;
+  float: left;
+  perspective: 600px;
+}
+
+.front3,
+.back3 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 200px;
+  color: #03446A;
+  text-align: center;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  background-image: url('./img/AWS-SolArchitect-Associate.png');
+  background-position: center;
+  background-size: cover;
+  background-size: 85%;
+  background-repeat: no-repeat;
+}
+
+.back3 {
+  background: #03446A;
+  color: white;
+  transform: rotateY( 180deg );
+  font-size: 30px;
+}
+
+.card4 {
+  position: absolute;
+  top: 70%;
+  left: 61%;
+  width: 193px;
+  height: 200px;
+  margin: -150px;
+  float: left;
+  perspective: 600px;
+}
+
+.front4,
+.back4 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 200px;
+  color: #03446A;
+  text-align: center;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  background-image: url('./img/LPIC-1.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-size: 85%;
+  background-repeat: no-repeat;
+}
+
+.back4 {
+  background: #03446A;
+  color: white;
+  transform: rotateY( 180deg );
+  font-size: 30px;
+}
+
+.card5 {
+  position: absolute;
+  top: 70%;
+  left: 77%;
+  width: 193px;
+  height: 200px;
+  margin: -150px;
+  float: left;
+  perspective: 600px;
+}
+
+.front5,
+.back5 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 200px;
+  color: #03446A;
+  text-align: center;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  background-image: url('./img/EXIN-ITIL-V3.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-size: 85%;
+  background-repeat: no-repeat;
+}
+
+.back5 {
+  background: #03446A;
+  color: white;
+  transform: rotateY( 180deg );
+  font-size: 30px;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -280,7 +379,7 @@ body {
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="#">Detailed CV</a>
+        <a href="https://drive.google.com/file/d/1cnBFWCepgGReR4asuadQdNsNDNAuQfwb/view?usp=sharing">Detailed CV</a>
         <a href="#">Creative CV</a>
         <a href="#">Minimalistic CV</a>
       </div>
@@ -301,7 +400,21 @@ body {
 
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
   <h3 style="text-align:center;">About</h3>
-  <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio<span id="dots">...</span><span id="more">. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+  <p>Do not hesitate to spend a few minutes of your precious time for lurking in my profile)</p>
+  <p>I'm an extraordinary person with almost a decade of hands-on experience in systems architecture, databases, virtualization, Linux, cloud technologies, containers, networking and scripting, design and implementation of fully automated continuous integration, continuous delivery, continuous deployment pipelines, and DevOps processes.</p>
+<p><span id="dots">...</span><span id="more">
+Toolset: Jira, Service Now; ClearCase, Perforce, Git, Mercurial, BitBucket;
+ Jenkins, Bamboo, TeamCity, GithubActions, TravisCI, Luigi, Spinnaker, AWS Codepipeline, ARGO;
+ Autosys, Comtrol-M,Terraform, Ansible, Chef, Vagrant, Packer;
+ Shell script, Python, PowerShell, yaml, jinja2; Amazon Web Services, Microsoft Azure;
+ Linux, Unix, Novell NetWare, Windows Server; Docker, Kubernetes, Helm, Traefik;
+ Elastic Stack, MongoDB; Nginx, Apache Tomcat, IIS; Puppet, Ansible, Hashicorp Terraform, AWS CloudFormation;
+ MySQL, MS SQL, PostgreSQL, ElasticSearch, Oracle; ELK stack, Nagious-CheckMK, Zabbix, Prometheus, Grafana, Loki;
+ Apache Kafka; Nexus, GithubPackages, Jfrog Artifactory, Hashicorp Consul, Hashicorp Vault.
+
+Soft skills: Initiative and enthusiastic, efficient self-learner, result-oriented, always willing to improve myself and work environment, doing maximum to use and implement modern best practices, nowadays hooked on DevOps philosophy and SRE principles. Workaholic a little.
+
+Inspirational books for me: The Phoenix Project, Google's SRE, Netflix Freedom & Responsibility Culture, DevOps Handbook</p>
   <button onclick="myFunction()" id="myBtn">Read more</button>
 </div>
 
@@ -316,7 +429,6 @@ body {
     <div class="card1">
       <div class="content1">
         <div class="front1">
-          MTA
         </div>
         <div class="back1">
           Almost done!
@@ -326,10 +438,36 @@ body {
     <div class="card2">
       <div class="content2">
         <div class="front2">
-          url("https://images.youracclaim.com/size/680x680/images/4bc21d8b-4afe-4fbd-9a90-a9de8bf7b240/AWS-SolArchitect-Associate-2020.png")
         </div>
         <div class="back2">
-          Done!
+          May, 2020
+        </div>
+      </div>
+    </div>
+    <div class="card3">
+      <div class="content3">
+        <div class="front3">
+        </div>
+        <div class="back3">
+          May, 2018
+        </div>
+      </div>
+    </div>
+    <div class="card4">
+      <div class="content4">
+        <div class="front4">
+        </div>
+        <div class="back4">
+          June, 2015
+        </div>
+      </div>
+    </div>
+    <div class="card5">
+      <div class="content5">
+        <div class="front5">
+        </div>
+        <div class="back5">
+          May, 2012
         </div>
       </div>
     </div>
