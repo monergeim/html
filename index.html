@@ -1,24 +1,502 @@
+
 <!DOCTYPE html>
-
-<!-- My first site -->
-
 <html>
 <head>
-	<title>
-		Home - Profile
-	</title>
-	<link rel="stylesheet" type="text/css" href="styles.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Serg's First Website </title>
+<link rel="icon" type="image/svg" href="https://www.flaticon.com/premium-icon/icons/svg/3346/3346914.svg">
+<style>
+.navbar {
+  background-color: #111;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 12px;
+  background-color: inherit;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #4d7fc5;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 187px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.vl {
+  border-right: 5px solid black;
+  height: 600px;
+  position: absolute;
+  left: 87%;
+}
+
+.vertical-menu {
+  width: 200px;
+  position: absolute;
+  right: 0;
+  top: 12%;
+  z-index: 998;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  border: 1px solid #555;
+}
+
+.vertical-menu a:hover {
+  background-color: #4d7fc5;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("https://a-static.besthdwallpaper.com/blue-sky-galaxy-shpalery-2560x1080-1747_14.jpg");
+  min-height: 90%;
+}
+
+.bgimg-2 {
+  background-image: url("https://www.ga4gh.org/wp-content/uploads/beacon-WP-image-01.png");
+  min-height: 570px;
+}
+
+.bgimg-3 {
+  background-image: url("https://miro.medium.com/max/2700/1*NVh77IO_pSVvQT1TOQtnTQ.jpeg");
+  min-height: 650px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 80%;
+  width: 100%;
+  text-align: left;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 28px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+body {
+  background: #eee;
+  font-family: 'Lily Script One';
+}
+
+.card1 {
+  position: absolute;
+  top: 70%;
+  left: 13%;
+  width: 193px;
+  height: 200px;
+  margin: -150px;
+  float: left;
+  perspective: 600px;
+}
+
+.content1, .content2, .content3, .content4, .content5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card1:hover .content1, .card2:hover .content2, .card3:hover .content3,
+ .card4:hover .content4, .card5:hover .content5{
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front1,
+.back1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 200px;
+  color: #03446A;
+  text-align: center;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  background-image: url('./img/MTA.png');
+  background-position: center;
+  background-size: cover;
+  background-size: 85%;
+  background-repeat: no-repeat;
+}
+
+.back1 {
+  background: #03446A;
+  color: white;
+  transform: rotateY( 180deg );
+  font-size: 30px;
+}
+
+.card2 {
+  position: absolute;
+  top: 70%;
+  left: 29%;
+  width: 193px;
+  height: 200px;
+  margin: -150px;
+  float: left;
+  perspective: 600px;
+}
+
+.front2,
+.back2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 200px;
+  color: #03446A;
+  text-align: center;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  background-image: url('./img/LPIC-2.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-size: 85%;
+  background-repeat: no-repeat;
+}
+
+.back2 {
+  background: #03446A;
+  color: white;
+  transform: rotateY( 180deg );
+  font-size: 30px;
+}
+
+.card3 {
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  width: 193px;
+  height: 200px;
+  margin: -150px;
+  float: left;
+  perspective: 600px;
+}
+
+.front3,
+.back3 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 200px;
+  color: #03446A;
+  text-align: center;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  background-image: url('./img/AWS-SolArchitect-Associate.png');
+  background-position: center;
+  background-size: cover;
+  background-size: 85%;
+  background-repeat: no-repeat;
+}
+
+.back3 {
+  background: #03446A;
+  color: white;
+  transform: rotateY( 180deg );
+  font-size: 30px;
+}
+
+.card4 {
+  position: absolute;
+  top: 70%;
+  left: 61%;
+  width: 193px;
+  height: 200px;
+  margin: -150px;
+  float: left;
+  perspective: 600px;
+}
+
+.front4,
+.back4 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 200px;
+  color: #03446A;
+  text-align: center;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  background-image: url('./img/LPIC-1.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-size: 85%;
+  background-repeat: no-repeat;
+}
+
+.back4 {
+  background: #03446A;
+  color: white;
+  transform: rotateY( 180deg );
+  font-size: 30px;
+}
+
+.card5 {
+  position: absolute;
+  top: 70%;
+  left: 77%;
+  width: 193px;
+  height: 200px;
+  margin: -150px;
+  float: left;
+  perspective: 600px;
+}
+
+.front5,
+.back5 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 200px;
+  color: #03446A;
+  text-align: center;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  background-image: url('./img/EXIN-ITIL-V3.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-size: 85%;
+  background-repeat: no-repeat;
+}
+
+.back5 {
+  background: #03446A;
+  color: white;
+  transform: rotateY( 180deg );
+  font-size: 30px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+#more {display: none;}
+</style>
 </head>
 <body>
-	<center>
-		<h1> Welcome to my page </h1>
-		<h2 style="color:red;"> Details </h2>
-		<p> True DevOps</p>
-		<p> Some tools description: <br /> first <br /> second </p>
-		<a href="https://google.com"> <button class="btn">Visit Goo</button></a>
-		<button>Click me</button>
-		<hr>
-		<img src="devops.jpeg">
-	</center>
+
+<div class="bgimg-1">
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="books.html">Books</a>
+    <a href="mailto:sergii.lypnytskiy@gmail.com">Send_e-mail</a>
+    <div class="dropdown">
+      <button class="dropbtn">Curriculum_Vitae
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https://drive.google.com/file/d/1cnBFWCepgGReR4asuadQdNsNDNAuQfwb/view?usp=sharing">Detailed CV</a>
+        <a href="#">Creative CV</a>
+        <a href="#">Minimalistic CV</a>
+      </div>
+    </div>
+  </div>
+  <div class="vl"></div>
+  <div class="vertical-menu">
+    <a href="https://www.linkedin.com/in/sergii-lypnytskiy/">Linkedin</a>
+    <a href="https://github.com/monergeim">Git</a>
+    <a href="https://medium.com/@monergeim">Medium</a>
+    <a href="https://stackoverflow.com/users/5306939">StackOverflow</a>
+
+  </div>
+  <div class="caption">
+  <span class="border">Sergii Lypnytskyi</span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">About</h3>
+  <p>Do not hesitate to spend a few minutes of your precious time for lurking in my profile)</p>
+  <p>I'm an extraordinary person with almost a decade of hands-on experience in systems architecture, databases, virtualization, Linux, cloud technologies, containers, networking and scripting, design and implementation of fully automated continuous integration, continuous delivery, continuous deployment pipelines, and DevOps processes.</p>
+<p><span id="dots">...</span><span id="more">
+Toolset: Jira, Service Now; ClearCase, Perforce, Git, Mercurial, BitBucket;
+ Jenkins, Bamboo, TeamCity, GithubActions, TravisCI, Luigi, Spinnaker, AWS Codepipeline, ARGO;
+ Autosys, Comtrol-M,Terraform, Ansible, Chef, Vagrant, Packer;
+ Shell script, Python, PowerShell, yaml, jinja2; Amazon Web Services, Microsoft Azure;
+ Linux, Unix, Novell NetWare, Windows Server; Docker, Kubernetes, Helm, Traefik;
+ Elastic Stack, MongoDB; Nginx, Apache Tomcat, IIS; Puppet, Ansible, Hashicorp Terraform, AWS CloudFormation;
+ MySQL, MS SQL, PostgreSQL, ElasticSearch, Oracle; ELK stack, Nagious-CheckMK, Zabbix, Prometheus, Grafana, Loki;
+ Apache Kafka; Nexus, GithubPackages, Jfrog Artifactory, Hashicorp Consul, Hashicorp Vault.
+
+Soft skills: Initiative and enthusiastic, efficient self-learner, result-oriented, always willing to improve myself and work environment, doing maximum to use and implement modern best practices, nowadays hooked on DevOps philosophy and SRE principles. Highly reliable person, in other words I tend to put every ounce of myself into the project..
+
+Inspirational books for me: The Phoenix Project, Google's SRE, Netflix Freedom & Responsibility Culture, DevOps Handbook</p>
+  <button onclick="myFunction()" id="myBtn">Read more</button>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">Certifications:</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color: #777;background-color:white;text-align:center;padding:120px 180px;text-align: justify;">
+    <div class="card1">
+      <div class="content1">
+        <div class="front1">
+        </div>
+        <div class="back1">
+          Almost done!
+        </div>
+      </div>
+    </div>
+    <div class="card2">
+      <div class="content2">
+        <div class="front2">
+        </div>
+        <div class="back2">
+          May, 2020
+        </div>
+      </div>
+    </div>
+    <div class="card3">
+      <div class="content3">
+        <div class="front3">
+        </div>
+        <div class="back3">
+          May, 2018
+        </div>
+      </div>
+    </div>
+    <div class="card4">
+      <div class="content4">
+        <div class="front4">
+        </div>
+        <div class="back4">
+          June, 2015
+        </div>
+      </div>
+    </div>
+    <div class="card5">
+      <div class="content5">
+        <div class="front5">
+        </div>
+        <div class="back5">
+          May, 2012
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Have a great day!</span>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
 </body>
 </html>
